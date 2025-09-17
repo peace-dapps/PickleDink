@@ -2,12 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+  <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <title>PickleDink (PDINK) - The Currency of the Court</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         /* Global Styles */
+        /* Make images scale */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Container responsiveness */
+.container {
+  width: 100%;
+  max-width: 1200px; /* adjust as needed */
+  margin: 0 auto;
+  padding: 0 15px; /* prevents content from touching edges */
+}
+
+/* Text responsiveness */
+h1, h2, h3, p {
+  word-wrap: break-word;
+  line-height: 1.4;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .flex {
+    flex-direction: column; /* stacks sections on mobile */
+  }
+}
         :root {
             --dark-blue: #003366;
             --bright-green: #8DC63F;
@@ -186,7 +225,7 @@
             flex-wrap: wrap;
         }
 
-        .contract-address {
+.contract-address {
     display: flex;
     align-items: center;
     justify-content: space-between; /* spreads text + button */
@@ -242,19 +281,7 @@
             background: var(--dark-green);
             transform: scale(1.1);
         }
-@media (max-width: 480px) {
-  .contract-address {
-    flex-direction: column;
-    align-items: flex-start;
-    border-radius: 15px; /* smaller radius looks better */
-  }
 
-  .contract-address p {
-    margin-bottom: 8px;
-    margin-right: 0;
-    font-size: 0.8rem;
-  }
-}
         .coming-soon-badge {
             display: inline-block;
             background: var(--bright-green);
@@ -823,8 +850,8 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>The <span class="text-accent">Currency</span> of the Court.</h1>
-                <p>PickleDink (PDINK) powers the future of pickleball; where every dink, drive, and victory earns its worth on the Solana blockchain.</p>
+                <h1>The <span class="text-accent">Currency</span> of the <br/> Court.</h1>
+                <p>PickleDink (PDINK) powers the future of pickleball; where every dink, drive,<br/> and victory earns its worth on the Solana blockchain.</p>
                 <div class="hero-buttons">
                     <a href="#about" class="btn btn-primary">Learn More</a>
                     <a href="#game" class="btn btn-secondary">Join the Game</a>
@@ -896,25 +923,64 @@
                         <p>Website & Community Hub Launch. Whitepaper Release.</p>
                     </div>
                 </div>
+                   <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Q4 2025 - NFT Integration & Ecosystem Expansion</h3>
+                        <p>NFT collection release, NFT airdrop for PDINK holders, Merchandise production and Staking Platform launch</p>
+                    </div>
+                </div>
+                  <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Q4 2025 - Partnership & Collaboration </h3>
+
+
+                        <p>Partnership announcements with pickleball organizations, Collaboration with crypto sport niche influencers and Pickleball influencers.</p>
+
+
+                    </div>
+                </div>
+                
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <h3>Q4 2025 - Game Development</h3>
-                        <p>PicklePayouts.com Alpha Development. Tournament System Design.</p>
+                        <h3>Q1 2026 - Game Development & UI/UX design</h3>
+                        <p>PicklePayouts.com Alpha Development. Tournament System Design and and payment processing </p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <h3>Q1 2026 - Game Launch</h3>
-                        <p>Game Launch. Wallet Integration. First Live Tournaments.</p>
+                        <h3>Q2 2026 - Game Launch</h3>
+                        <p>Game Launch. Wallet Integration. First Live Tournaments with PDINK entry fees/rewards, Player ranking and matchmaking system.</p>
+                    </div>
+                </div>
+                  <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Q3 2026 - PaddleTrac Integration</h3>
+                        <p>PaddleTrac app integration with PDINK rewards, Develop "find my paddle" functionality with token incentives, Cross-platform user account synchronization. </p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <h3>Q2 2026 - Expansion</h3>
-                        <p>Marketplace Prototype. Enhanced Features. Mobile Optimization.</p>
+                        <h3> Q4 2026 - Ecosystem Growth</h3>
+
+                        <p>CEX listings, Professional pickleball partnerships, Mobile app standalone development.</p>
+
+
+                    </div>
+                </div>
+                      <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3> 2027+ - Long-Term Vision</h3>
+
+                        <p>Become standard currency for pickleball ecosystems, Establish PDINK as recreational sports token standard, Global tournament sponsorship and events</p>
+
+
                     </div>
                 </div>
             </div>
@@ -1067,13 +1133,16 @@
         <p>The Currency of the Court</p>
       </div>
       <div class="footer-links">
-        <a href="https://pdink-docs.vercel.app/">Docs</a>
-        <a href="https://pdink-whitepaper.vercel.app/">Whitepaper</a>
+        <a href="#">Docs</a>
+        <a href="#">Whitepaper</a>
+        <a href="#">Full Roadmap</a>
 
       </div>
+
+
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2025 PicklePayouts powered by PickleDink (PDINK). All rights reserved.</p>
+      <p>&copy; 2025 PickleDink (PDINK). All rights reserved.</p>
     </div>
   </div>
 </footer>
