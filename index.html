@@ -452,79 +452,80 @@
           }
         }
 /* Roadmap Section */
+/* Roadmap Section */
 .roadmap {
   background: var(--dark-blue);
-  padding: 80px 20px;
+  padding: 50px 15px; /* reduced from 80px 20px */
   color: var(--white);
 }
 
 .roadmap .section-title {
   text-align: center;
-  font-size: 2.2rem;
-  margin-bottom: 60px;
+  font-size: 1.8rem; /* smaller title */
+  margin-bottom: 35px; /* less spacing */
   font-weight: 700;
   color: var(--bright-green);
 }
 
 .timeline {
   position: relative;
-  max-width: 800px;
+  max-width: 700px; /* slightly narrower */
   margin: 0 auto;
-  padding-left: 20px;
+  padding-left: 15px;
 }
 
 .timeline::before {
   content: "";
   position: absolute;
   top: 0;
-  left: 20px;
-  width: 4px;
+  left: 15px;
+  width: 3px; /* thinner line */
   height: 100%;
   background: var(--bright-green);
 }
 
 .timeline-item {
   position: relative;
-  margin-bottom: 50px;
-  padding-left: 60px;
+  margin-bottom: 30px; /* less spacing */
+  padding-left: 45px;  /* tighter */
 }
 
 .timeline-dot {
   position: absolute;
-  top: 5px;
-  left: 10px;
-  width: 20px;
-  height: 20px;
+  top: 4px;
+  left: 6px;
+  width: 14px;  /* smaller dot */
+  height: 14px;
   background: var(--bright-green);
   border-radius: 50%;
-  border: 3px solid var(--dark-blue);
+  border: 2px solid var(--dark-blue);
 }
 
 .timeline-content {
   background: var(--light-blue);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  padding: 15px; /* reduced padding */
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
 }
 
 .timeline-content h3 {
-  margin: 0 0 10px;
-  font-size: 1.3rem;
+  margin: 0 0 8px;
+  font-size: 1.1rem; /* smaller heading */
   color: var(--bright-green);
 }
 
 .timeline-content p {
   margin: 0;
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 0.9rem; /* smaller text */
+  line-height: 1.4;
 }
 
 @media (max-width: 768px) {
   .timeline {
-    padding-left: 10px;
+    padding-left: 8px;
   }
   .timeline-item {
-    padding-left: 40px;
+    padding-left: 35px;
   }
   .timeline-dot {
     left: 0;
